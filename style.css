@@ -16,13 +16,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding-inline: 2rem;
+    margin: 0;
 }
 
 .nav-btn {
   position: fixed;
   top: -1rem;
-  right: 3rem;
+  right: 4rem;
+  width: 200px;
   color: var(--Very-light-gray);
   background: var(--Dark-cyan);
   border-color: var(--Dark-cyan);
