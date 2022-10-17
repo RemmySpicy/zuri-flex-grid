@@ -19,6 +19,19 @@ body {
     padding: 2rem;
 }
 
+.nav-btn {
+  position: fixed;
+  top: -1rem;
+  right: 3rem;
+  color: var(--Very-light-gray);
+  background: var(--Dark-cyan);
+  border-color: var(--Dark-cyan);
+}
+
+.nav-btn:hover {
+  color: var(--Dark-cyan);
+}
+
 .container {
     display: flex;
     justify-content: center;
