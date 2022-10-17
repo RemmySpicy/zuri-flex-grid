@@ -12,10 +12,11 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--Very-light-gray);
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .container {
@@ -23,6 +24,8 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 950px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 ul {
@@ -31,7 +34,6 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
-    background-color: aqua;
     border-radius: 10px;
 }
 
@@ -41,7 +43,6 @@ li {
 
 .sedan {
     background-color: var(--Bright-orange);
-    border-radius: 10px 0 0 10px;
 }
 
 .sedan button {
@@ -58,7 +59,6 @@ li {
 
 .luxury {
     background-color: var(--Very-dark-cyan);
-    border-radius: 0 10px 10px 0;
 }
 
 .luxury button {
@@ -75,6 +75,7 @@ h1 {
 
 p {
     color: var(--Transparent-white);
+    font-size: 15px;
 }
 
 button {
@@ -87,9 +88,20 @@ button {
     width: 11em;
     margin-top: 4rem;
     cursor: pointer;
+    transition: background-color 100ms ease-in-out;
 }
 
 button:hover {
     color: var(--Very-light-gray);
     background-color: transparent;
+}
+
+@media (max-width: 750px) {  
+  .container {
+    max-width: 450px;
+    
+  }
+  ul {
+    flex-direction: column;
+  }
 }
